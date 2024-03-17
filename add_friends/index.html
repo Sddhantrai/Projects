@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: black;
+            font-family: cursive;
+            height: 100vh;
+        }
+        .container{
+           border: solid black;
+           width: 350px;
+           height: 500px;
+           background-color: white;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+         border-radius: 13px;
+            
+        }
+       .container img{
+            width: 200px;
+            height: 230px;
+            border-radius:50%;
+        }
+        button{
+            font-family:cursive ;
+            width: 90px;
+            height: 30px;
+            border-radius: 6px;
+        }
+        .remove{
+            background-color:white;
+        }
+        .button{
+            background-color:rgb(74, 233, 74);
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="images" src="cdd.jpg" alt="">
+        <h2>Siddhant Rai</h2>
+        <h3 style="font-weight: 900;" class="display">Stranger</h3>
+        <div class="buttondiv">
+            <button class="remove">Remove</button>
+            <button class="button">Add Friend</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

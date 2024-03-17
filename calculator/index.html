@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  h1{
+    position: relative;
+  }
+  h1::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+  }
+  @keyframes anime {
+    0%{
+      width: 0;
+      left: 0;
+    }
+    50%{
+      width: 100%;
+      left: 0;
+    }
+    100%{
+      width: 0%;
+      left: 100%;
+    }
+  }
+  h1:hover::after{
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  body{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  input{
+    border: solid black 1px;
+    width: 175px;
+    height: 30px;
+   display: flex;
+   justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: solid black;
+  border-radius: 8px;
+  }
+  #maincontainer{
+    top: 10px;
+    width: 200px;
+    height: 280px;
+    margin: 0, auto;
+     border: solid;
+    display: flex;
+  align-items: center;    
+    flex-direction:column; 
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+  }
+  #secondcontainer {
+   margin: 10px;
+   gap:6px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   /* border: solid; */
+   height: 140px;
+   top: 6px;
+}
+button{
+  height: 40px;
+  width: 40px;
+  border: solid black ;
+  border-radius: 5px; 
+}
+h1{
+  font-family:cursive ;
+}
+#equals{
+  width: 100px;
+}
+</style>
+<body>
+  <h1>CDD Calculator</h1>
+  <div id="maincontainer">
+    <input type="text" id="inpt" >
+  <div id="secondcontainer">
+    <button class="number">C</button>
+    <button class="number">Del</button>
+
+    <button class="number">+</button>
+    <button class="number">-</button>
+    <button class="number">*</button>
+    
+   <button class="number">7</button>
+   <button class="number">8</button>
+   <button class="number">9</button>
+   <button class="number">/</button>
+   
+   
+   <button class="number">4</button>
+   <button class="number">5</button>
+   <button class="number">6</button>
+   <button class="number">.</button>
+
+   <button class="number">1</button>
+   <button class="number">2</button>
+   <button class="number">3</button>
+   <button class="number">=</button>  
+   <button class="number">0</button>
+   
+  </div>
+</div>
+</body>
+<script src="script.js"></script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            border: solid white;
+        }
+        #container {
+            height: 300px;
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+            
+        }
+        #container img{
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #container i{
+            font-size: 55px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            opacity: 1;
+            transition: All ease 0.5s;
+        }
+
+    </style>
+</head>
+<body> 
+    <div id="container"> 
+        <img src="baby.jpg">
+        <i class="ri-heart-fill"></i>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
